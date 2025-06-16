@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <script src="theme-switcher.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <div class="div-btn">
+                    <button onClick="toggleDarkMode()"><p>Click me!</p></button>
+            </div>
+        </header>
+
+        <main>
+
+            <section class="navigation">
+                <nav>
+                    <ul>
+                        <li>Introduction</li>
+                        <li>Media Queries</li>
+                        <li>Flexbox</li>
+                        <li>Grid</li>
+                        <li>Creating Responsive Navigation</li>
+                    </ul>
+                </nav>
+            </section>
+            
+            <section class="content">
+
+                <h1>Responsive Web Design</h1>
+
+                <article id="Introduction" class="main-section">
+                    <h2>Introduction</h2>
+                    <p>Responsive web design is an approach to web design that makes web pages render well on a variety of devices and window or screen sizes. Recent work also considers the viewer proximity as part of the viewing context as an extension for RWD.</p>
+                    <p>Content, design, and performance are necessary across all devices to ensure usability and satisfaction. A site designed with RWD adapts the layout to the viewing environment using fluid, proportion-based grids, flexible images, and CSS3 media queries.</p>
+                    <p>The practice consists of a mix of flexible grids and layouts, images, and intelligent use of CSS media queries. As the user switches from their laptop to iPad, the website should automatically switch to accommodate for resolution, image size, and scripting abilities.</p>
+                    <p>In other words, the website should have the technology to automatically respond to the user's preferences. This would eliminate the need for a different design and development phase for each new gadget on the market.</p>
+                </article>
+
+                <article id="Media_Queries" class="main-section">
+                    <h2>Media Queries</h2>
+                    <p>Media queries are a fundamental part of responsive web design. They allow you to apply different styles depending on the characteristics of the device that is displaying the content.</p>
+                    <code>@media (max-width: 600px) { ... }</code>
+                    <p>Media queries can be used to check many things, such as:</p>
+                    <ul>
+                        <li>Width and height of the viewport</li>
+                        <li>Width and height of the device</li>
+                        <li>Orientation (is the device in landscape or portrait mode?)</li>
+                        <li>Resolution</li>
+                    </ul>
+                    <p>Using media queries you can create a responsive layout that changes based on the screen size.</p>
+                </article>
+                
+                <article id="Flexbox" class="main-section">
+                    <h2>Flexbox</h2>
+                    <p>Flexbox is a CSS layout module designed as a one-dimensional layout model, and as a method that could offer space distribution between items in an interface and powerful alignment capabilities.</p>
+                    <p>To create a flex container, you use the CSS <code>display: flex;</code> property:</p>
+                    <code>
+                        .container {
+                            display: flex;
+                        }
+                    </code>
+                    <p>Some common flex properties include:</p>
+                    <ul>
+                        <li><code>flex-direction</code>: This establishes the main-axis, thus defining the direction flex items are placed in the flex container.</li>
+                        <li><code>justify-content</code>: This defines the alignment along the main axis.</li>
+                        <li><code>align-items</code>: This defines the default behavior for how flex items are laid out along the cross axis.</li>
+                        <li><code>flex-wrap</code>: By default, flex items will all try to fit onto one line. You can change that and allow the items to wrap as needed with this property.</li>
+                    </ul>
+                </article>
+
+                <article id="Grid" class="main-section">
+                    <h2>Grid</h2>
+                    <p>CSS Grid Layout is a two-dimensional layout system for the web. It lets you layout items in rows and columns, and has many features that make building complex layouts straightforward.</p>
+                    <p>To get started with CSS Grid, you need to define a container element as a grid with the <code>display: grid;</code> property:</p>
+                    <code>
+                        .container {
+                            display: grid;
+                            grid-template-columns: repeat(3, 1fr);
+                            grid-gap: 10px;
+                        }
+                    </code>
+                    <p>This example creates a grid with three equal-width columns and a 10px gap between them.</p>
+                    <p>Some common grid properties include:</p>
+                    <ul>
+                        <li><code>grid-template-rows</code>: Defines the rows of the grid.</li>
+                        <li><code>grid-template-columns</code>: Defines the columns of the grid.</li>
+                        <li><code>grid-gap</code>: Specifies the gap between the rows and columns.</li>
+                        <li><code>grid-area</code>: Gives an item a name so that it can be referenced in the grid layout.</li>
+                    </ul>
+                </article>
+
+                <article id="Creating_Responsive_Navigation" class="main-section">
+                    <h2>Creating Responsive Navigation</h2>
+                    <p>Creating responsive navigation is essential for a good user experience. Here's how you can do it:</p>
+                    <p>First, create the HTML structure:</p>
+                    <code>
+                        &lt;nav id="navbar"&gt;
+                            &lt;header&gt;Documentation&lt;/header&gt;
+                            &lt;a class="nav-link" href="#Introduction"&gt;Introduction&lt;/a&gt;
+                            &lt;a class="nav-link" href="#Media_Queries"&gt;Media Queries&lt;/a&gt;
+                            &lt;a class="nav-link" href="#Flexbox"&gt;Flexbox&lt;/a&gt;
+                            &lt;a class="nav-link" href="#Grid"&gt;Grid&lt;/a&gt;
+                            &lt;a class="nav-link" href="#Viewport_Meta_Tag"&gt;Viewport Meta Tag&lt;/a&gt;
+                            &lt;a class="nav-link" href="#Creating_Responsive_Navigation"&gt;Creating Responsive Navigation&lt;/a&gt;
+                        &lt;/nav&gt;
+                    </code>
+                    <p>Then, use CSS to style it and make it responsive:</p>
+                    <code>
+                        #navbar {
+                            position: fixed;
+                            left: 0;
+                            top: 0;
+                            width: 200px;
+                            height: 100%;
+                            overflow-y: auto;
+                            border: 1px solid black;
+                            background-color: #f9f9f9;
+                        }
+
+                        #main-doc {
+                            margin-left: 200px;
+                            border: 1px solid black;
+                            padding: 20px;
+                        }
+
+                        .nav-link {
+                            display: block;
+                            padding: 10px;
+                            background-color: white;
+                            border-top: 1px solid black;
+                            color: black;
+                            text-decoration: none;
+                        }
+
+                        .nav-link:hover {
+                            background-color: grey;
+                        }
+
+                        .nav-link.active {
+                            background-color: black;
+                            color: white;
+                        }
+
+                        @media screen and (max-width: 600px) {
+                            #navbar {
+                                position: relative;
+                                width: 100%;
+                                height: auto;
+                            }
+
+                            #main-doc {
+                                margin-left: 0;
+                            }
+                        }
+                    </code>
+                </article>
+
+            </section>
+
+        </main>
+
+        <footer>
+
+        </footer>
+    </body>
+</html>

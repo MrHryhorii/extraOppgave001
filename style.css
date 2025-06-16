@@ -1,0 +1,71 @@
+body.light-mode {
+    --text-color: #000;
+}
+
+body.dark-mode {
+    --text-color: #fff;
+}
+
+p {
+    color: var(--text-color);
+}
+
+
+
+/* ======== MY BASE STYLE ======== */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100svh;
+}
+
+header, footer{
+    flex-basis: 70px;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+}
+
+.div-btn{
+    min-width: fit-content;
+}
+
+.div-btn button{
+    width: 100px;
+    height: 50px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100px;
+    flex-grow: 1;
+
+    margin-top: 70px;
+}
+
+.navigation{
+    width: 200px;
+    position: fixed;
+    height: 100%;
+}
+
+.content{
+    margin-left: 200px;
+}
+
+header, footer, section{
+    border: 2px red solid;
+}
+
+/* ======== MODE STYLE ======== */
