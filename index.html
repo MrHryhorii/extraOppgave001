@@ -108,54 +108,56 @@
                         &lt;/nav&gt;
                     </code>
                     <p>Then, use CSS to style it and make it responsive:</p>
-                    <code>
-                        #navbar {
-                            position: fixed;
-                            left: 0;
-                            top: 0;
-                            width: 200px;
-                            height: 100%;
-                            overflow-y: auto;
-                            border: 1px solid black;
-                            background-color: #f9f9f9;
-                        }
+                    <pre>
+<code>
+#navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    overflow-y: auto;
+    border: 1px solid black;
+    background-color: #f9f9f9;
+}
 
-                        #main-doc {
-                            margin-left: 200px;
-                            border: 1px solid black;
-                            padding: 20px;
-                        }
+#main-doc {
+    margin-left: 200px;
+    border: 1px solid black;
+    padding: 20px;
+}
 
-                        .nav-link {
-                            display: block;
-                            padding: 10px;
-                            background-color: white;
-                            border-top: 1px solid black;
-                            color: black;
-                            text-decoration: none;
-                        }
+.nav-link {
+    display: block;
+    padding: 10px;
+    background-color: white;
+    border-top: 1px solid black;
+    color: black;
+    text-decoration: none;
+}
 
-                        .nav-link:hover {
-                            background-color: grey;
-                        }
+.nav-link:hover {
+    background-color: grey;
+}
 
-                        .nav-link.active {
-                            background-color: black;
-                            color: white;
-                        }
+.nav-link.active {
+    background-color: black;
+    color: white;
+}
 
-                        @media screen and (max-width: 600px) {
-                            #navbar {
-                                position: relative;
-                                width: 100%;
-                                height: auto;
-                            }
+@media screen and (max-width: 600px) {
+    #navbar {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
 
-                            #main-doc {
-                                margin-left: 0;
-                            }
-                        }
-                    </code>
+    #main-doc {
+        margin-left: 0;
+    }
+}
+</code>
+                    </pre>
                 </article>
 
             </section>

@@ -12,7 +12,7 @@ p {
 
 
 
-/* ======== MY BASE STYLE ======== */
+/* ======== BASE LAYOUT STYLE ======== */
 *{
     margin: 0px;
     padding: 0px;
@@ -26,7 +26,7 @@ body{
     min-height: 100svh;
 }
 
-header, footer{
+footer{
     flex-basis: 70px;
 }
 
@@ -37,6 +37,7 @@ header{
 
 .div-btn{
     min-width: fit-content;
+    max-width: 100%;
 }
 
 .div-btn button{
@@ -69,3 +70,102 @@ header, footer, section{
 }
 
 /* ======== MODE STYLE ======== */
+
+
+/* ======== BASE COLOR STYLE ======== */
+/* General body styling */
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #1e1e1e;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Headings */
+h1, h2{
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #1e1e1e;
+}
+
+h1{
+    font-size: 32px;
+}
+h2{
+    font-size: 24px;
+}
+
+/* Links */
+a{
+    color: #007acc;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+/* Buttons */
+button{
+    background-color: #007acc;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+button:hover{
+    background-color: #005fa3;
+}
+
+/* Navigation menu */
+nav ul{
+    list-style: none;
+    padding: 16px;
+    background-color: #ffffff;
+    border-right: 1px solid #dddddd;
+    height: 100%;
+}
+nav li{
+    padding: 12px 16px;
+    border-bottom: 1px solid #dddddd;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+nav li:hover{
+    background-color: #e0e0e0;
+}
+
+/* Main content sections */
+.main-section{
+    padding: 16px 32px;
+    border-bottom: 1px solid #dddddd;
+}
+
+/* Shared code styling */
+code, pre{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+}
+
+/* Inline code */
+code{
+    color: #c7254e;
+    padding: 2px 4px;
+}
+
+/* Block code */
+pre{
+    color: #333333;
+    padding: 12px 16px;
+    margin-bottom: 16px;
+    line-height: 1.5;
+    border: 1px solid #cccccc;
+    
+    white-space: pre-wrap;
+    word-break: break-word;
+    overflow-x: auto;
+}
