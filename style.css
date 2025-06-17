@@ -1,12 +1,28 @@
 body.light-mode {
     --text-color: #000;
+    --not-content-background-color: #ffffff;
+    --body-background: #f4f4f4;
+    --code-background: #f0f0f0;
+    --code-text: #c7254e;
+    --click-color-normal:#007acc;
+    --click-color-hover: #005fa3;
+    --button-text: #fff;
+    --nav-hover: #e0e0e0;
 }
 
 body.dark-mode {
     --text-color: #fff;
+    --not-content-background-color: darkgray;
+    --body-background: #464646;
+    --code-background: #9a9a9a;
+    --code-text: #fff8ad;
+    --click-color-hover: #8f8300b5;
+    --click-color-normal:#ffeac1;
+    --button-text: #000;
+    --nav-hover: #e0e0e03c;
 }
 
-p {
+p, li {
     color: var(--text-color);
 }
 
@@ -81,21 +97,19 @@ main{
     margin-left: 20px;
 }
 
-/* ======== MODE STYLE ======== */
-
 
 /* ======== BASE COLOR STYLE ======== */
 /* General body styling */
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f4f4;
+    background-color: var(--body-background);
     color: #1e1e1e;
     line-height: 1.6;
     font-size: 16px;
 }
 
-header, footer{
-    background-color: #ffffff;
+header, footer, nav ul, .navigation{
+    background-color: var(--not-content-background-color);
 }
 
 /* Headings */
@@ -117,16 +131,17 @@ h2{
 
 /* Links */
 a{
-    color: #007acc;
+    color: var(--click-color-normal);
     text-decoration: none;
 }
 a:hover{
+    color: var(--click-color-hover);
     text-decoration: underline;
 }
 
 /* Buttons */
 button{
-    background-color: #007acc;
+    background-color: var(--click-color-normal);
     color: #ffffff;
     border: none;
     border-radius: 4px;
@@ -135,20 +150,19 @@ button{
     transition: background-color 0.2s ease;
 }
 button:hover{
-    background-color: #005fa3;
+    background-color: var(--click-color-hover);
+}
+
+button p{
+    color: var(--button-text);
 }
 
 /* Navigation menu */
 nav ul{
     list-style: none;
     padding: 16px;
-    background-color: #ffffff;
     border-right: 1px solid #dddddd;
     height: 100%;
-}
-
-.navigation{
-    background-color: #ffffff;
 }
 
 nav li{
@@ -158,7 +172,7 @@ nav li{
     transition: background-color 0.2s ease;
 }
 nav li:hover{
-    background-color: #e0e0e0;
+    background-color: var(--nav-hover);
 }
 
 /* Main content sections */
@@ -171,13 +185,13 @@ nav li:hover{
 code, pre{
     font-family: 'Courier New', Courier, monospace;
     font-size: 14px;
-    background-color: #f0f0f0;
+    background-color: var(--code-background);
     border-radius: 4px;
 }
 
 /* Inline code */
 code{
-    color: #c7254e;
+    color: var(--code-text);
     padding: 2px 4px;
 }
 
