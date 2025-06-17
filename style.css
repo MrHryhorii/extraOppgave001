@@ -8,18 +8,20 @@ body.light-mode {
     --click-color-hover: #005fa3;
     --button-text: #fff;
     --nav-hover: #e0e0e0;
+    --title-color: #1e1e1e;
 }
 
 body.dark-mode {
     --text-color: #fff;
-    --not-content-background-color: darkgray;
+    --not-content-background-color: rgb(95, 95, 95);
     --body-background: #464646;
-    --code-background: #9a9a9a;
-    --code-text: #fff8ad;
-    --click-color-hover: #8f8300b5;
-    --click-color-normal:#ffeac1;
+    --code-background: #696969;
+    --code-text: #ffef41;
+    --click-color-hover: #dcce04;
+    --click-color-normal:#ffff00;
     --button-text: #000;
-    --nav-hover: #e0e0e03c;
+    --nav-hover: #8b72723c;
+    --title-color: #fff8ad;
 }
 
 p, li {
@@ -97,7 +99,6 @@ main{
     margin-left: 20px;
 }
 
-
 /* ======== BASE COLOR STYLE ======== */
 /* General body styling */
 body{
@@ -116,7 +117,7 @@ header, footer, nav ul, .navigation{
 h1, h2{
     font-weight: 600;
     margin-bottom: 8px;
-    color: #1e1e1e;
+    color: var(--title-color)
 }
 
 h1{
@@ -238,5 +239,11 @@ pre{
 
     nav ul li{
        text-align: center;
+    }
+}
+
+@media (max-width:587px) {
+    *{
+        scroll-margin-top: 130px;
     }
 }
