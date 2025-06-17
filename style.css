@@ -213,7 +213,7 @@ pre{
 
 @media (max-width:600px) {
     header{
-        display: none;
+        bottom: 0px;
     }
 
     .navigation{
