@@ -63,11 +63,11 @@ function updateModeIcon() {
     const isDarkMode = body.classList.contains('dark-mode');
 
     const svgFilename = isDarkMode
-        ? 'lightmode.svg'
-        : 'darkmode.svg';
+        ? 'idea.png'
+        : 'night-mode.png';
 
     // Set the mode icon to the new svg filename
-    modeIcon.src = `icons/${svgFilename}`;
+    modeIcon.src = `img/${svgFilename}`;
     modeIcon.alt = 'Switch to Light Mode';
 }
 

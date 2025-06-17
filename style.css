@@ -17,6 +17,12 @@ p {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+
+    scroll-margin-top: 70px;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 body{
@@ -47,6 +53,8 @@ header{
 .div-btn button{
     width: 100px;
     height: 50px;
+
+    display: flex;
 }
 
 main{
@@ -67,10 +75,6 @@ main{
 
 .content{
     margin-left: 200px;
-}
-
-header, footer, section{
-    border: 2px red solid;
 }
 
 .content li{
