@@ -9,7 +9,7 @@
     <body>
         <header>
             <div class="div-btn">
-                    <button onClick="toggleDarkMode()"><p>Click me!</p></button>
+                <button onClick="toggleDarkMode()"><p>Click me!</p></button>
             </div>
         </header>
 
@@ -75,13 +75,15 @@
                     <h2>Grid</h2>
                     <p>CSS Grid Layout is a two-dimensional layout system for the web. It lets you layout items in rows and columns, and has many features that make building complex layouts straightforward.</p>
                     <p>To get started with CSS Grid, you need to define a container element as a grid with the <code>display: grid;</code> property:</p>
-                    <code>
-                        .container {
-                            display: grid;
-                            grid-template-columns: repeat(3, 1fr);
-                            grid-gap: 10px;
-                        }
-                    </code>
+                    <pre>
+<code>
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+    }
+</code>
+                    </pre>
                     <p>This example creates a grid with three equal-width columns and a 10px gap between them.</p>
                     <p>Some common grid properties include:</p>
                     <ul>
@@ -96,17 +98,19 @@
                     <h2>Creating Responsive Navigation</h2>
                     <p>Creating responsive navigation is essential for a good user experience. Here's how you can do it:</p>
                     <p>First, create the HTML structure:</p>
-                    <code>
-                        &lt;nav id="navbar"&gt;
-                            &lt;header&gt;Documentation&lt;/header&gt;
-                            &lt;a class="nav-link" href="#Introduction"&gt;Introduction&lt;/a&gt;
-                            &lt;a class="nav-link" href="#Media_Queries"&gt;Media Queries&lt;/a&gt;
-                            &lt;a class="nav-link" href="#Flexbox"&gt;Flexbox&lt;/a&gt;
-                            &lt;a class="nav-link" href="#Grid"&gt;Grid&lt;/a&gt;
-                            &lt;a class="nav-link" href="#Viewport_Meta_Tag"&gt;Viewport Meta Tag&lt;/a&gt;
-                            &lt;a class="nav-link" href="#Creating_Responsive_Navigation"&gt;Creating Responsive Navigation&lt;/a&gt;
-                        &lt;/nav&gt;
-                    </code>
+                    <pre>
+<code>
+&lt;nav id="navbar"&gt;
+    &lt;header&gt;Documentation&lt;/header&gt;
+    &lt;a class="nav-link" href="#Introduction"&gt;Introduction&lt;/a&gt;
+    &lt;a class="nav-link" href="#Media_Queries"&gt;Media Queries&lt;/a&gt;
+    &lt;a class="nav-link" href="#Flexbox"&gt;Flexbox&lt;/a&gt;
+    &lt;a class="nav-link" href="#Grid"&gt;Grid&lt;/a&gt;
+    &lt;a class="nav-link" href="#Viewport_Meta_Tag"&gt;Viewport Meta Tag&lt;/a&gt;
+    &lt;a class="nav-link" href="#Creating_Responsive_Navigation"&gt;Creating Responsive Navigation&lt;/a&gt;
+&lt;/nav&gt;
+</code>
+                    </pre>
                     <p>Then, use CSS to style it and make it responsive:</p>
                     <pre>
 <code>
